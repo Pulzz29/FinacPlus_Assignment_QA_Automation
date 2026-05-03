@@ -2,7 +2,7 @@ const { test, expect } = require('@playwright/test');
 
 test.describe('API Automation Assignment - Reqres.in', () => {
   const baseURL = 'https://reqres.in/api';
-  const API_KEY = 'pro_27cc66a86e552953ea476bb238ac39dcae13fd5da63a900b';
+  const API_KEY = process.env.API_KEY;
   const COLLECTION = 'users';
   let userId;
 

@@ -1,8 +1,8 @@
 const { test, expect } = require('@playwright/test');
 const fs = require('fs');
 
-const DEMOQA_USERNAME = 'Johnhere0067';
-const DEMOQA_PASSWORD = 'John@Pulkz007';
+const DEMOQA_USERNAME = process.env.DEMOQA_USERNAME;
+const DEMOQA_PASSWORD = process.env.DEMOQA_PASSWORD;
 
 test.describe('Playwright Automation Assignment', () => {
 
