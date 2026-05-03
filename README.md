@@ -2,6 +2,13 @@
 
 This repository contains UI and API automation tests using Playwright.
 
+## How I Made This Project
+1. Initialized a Node.js project and installed the necessary dependencies, primarily `@playwright/test` and `.env`.
+2. Created a structured repository separating tests into specific files (`assignment.spec.js` for UI and `api.spec.js` for API).
+3. Developed UI test scripts using Playwright's browser automation capabilities, specifically handling elements, selectors, and assertions.
+4. Developed API test scripts utilizing Playwright's built-in `request` fixture to test RESTful APIs efficiently without requiring external libraries like Axios.
+5. Configured environment variables (`.env`) to safely store sensitive data like usernames, passwords, and API keys.
+
 ## Prerequisites
 - Node.js installed on your machine.
 
@@ -15,6 +22,7 @@ This repository contains UI and API automation tests using Playwright.
    DEMOQA_USERNAME=Johnhere0067
    DEMOQA_PASSWORD=John@Pulkz007
    ```
+   **Note : These credentials are only mentioned here as it is an assignment project, in a real world scenario these credentials should be stored securely.**
 
 ## Running the Tests
 To run all tests (UI and API):
@@ -58,13 +66,6 @@ graph TD
     I --> J
     J --> K[End Tests]
 ```
-
-## How I Made This Project
-1. Initialized a Node.js project and installed the necessary dependencies, primarily `@playwright/test` and `.env`.
-2. Created a structured repository separating tests into specific files (`assignment.spec.js` for UI and `api.spec.js` for API).
-3. Developed UI test scripts using Playwright's browser automation capabilities, specifically handling elements, selectors, and assertions.
-4. Developed API test scripts utilizing Playwright's built-in `request` fixture to test RESTful APIs efficiently without requiring external libraries like Axios.
-5. Configured environment variables (`.env`) to safely store sensitive data like usernames, passwords, and API keys.
 
 ## Why It Is Useful
 - **Quality Assurance**: Automatically ensures that both the frontend interface and the backend APIs are functioning correctly.
