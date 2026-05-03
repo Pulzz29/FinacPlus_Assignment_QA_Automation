@@ -58,13 +58,14 @@ graph TD
     B -->|UI Tests| C[Launch Browser]
     C --> D[Navigate to DemoQA]
     D --> E[Login & Extract Book Info]
-    E --> F[Close Browser]
-    B -->|API Tests| G[Initialize API Request]
-    G --> H[Perform CRUD Operations on Reqres.in]
-    H --> I[Validate Response Codes & Data]
-    F --> J[Test Summary & Reporting]
-    I --> J
-    J --> K[End Tests]
+    E --> F[Logout]
+    F --> G[Close Browser]
+    B -->|API Tests| H[Initialize API Request]
+    H --> I[Perform CRUD Operations on Reqres.in]
+    I --> J[Validate Response Codes & Data]
+    G --> K[Test Summary & Reporting]
+    J --> K
+    K --> L[End Tests]
 ```
 
 ## Why It Is Useful
