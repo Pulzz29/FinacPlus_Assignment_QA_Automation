@@ -18,11 +18,10 @@ This repository contains UI and API automation tests using Playwright.
 3. If this is your first time using Playwright, run `npx playwright install --with-deps` to install the required browsers.
 4. Ensure you have a `.env` file in the root of the project with the following credentials:
    ```env
-   API_KEY=pro_27cc66a86e552953ea476bb238ac39dcae13fd5da63a900b
-   DEMOQA_USERNAME=Johnhere0067
-   DEMOQA_PASSWORD=John@Pulkz007
+   API_KEY=your_api_key
+   DEMOQA_USERNAME=your_username
+   DEMOQA_PASSWORD=your_password
    ```
-   **Note : These credentials are only mentioned here as it is an assignment project, in a real world scenario these credentials should be stored securely.**
 
 ## Running the Tests
 To run all tests (UI and API):
